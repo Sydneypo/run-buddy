@@ -22,7 +22,6 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
     position: -webkit- sticky;
-    position: sticky;
     top: 0;
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -199,17 +198,6 @@ footer a {
     left: -30px;
 }
 
-.checkbox-wrapper label::after {
-    content: "";
-    height: 6px;
-    width: 14px;
-    border-left: 2px solid var(--secondary-color);
-    position: absolute;
-    left: -26px;
-    top: 1px;
-    transform: rotate(-58deg);
-}
-
 .radio-wrapper label::before {
     border-radius: 50%;
 }
@@ -224,6 +212,18 @@ footer a {
     left: -29px;
     top: -3px;
     background-image: radial-gradient(circle, var(--secondary-color), var(--tertiary-color));
+}
+
+.checkbox-wrapper label::after {
+    content: "";
+    height: 6px;
+    width: 14px;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    position: absolute;
+    left: -26px;
+    top: 1px;
+    transform: rotate(-58deg);
 }
 
 .checkbox-wrapper input + label::after,
